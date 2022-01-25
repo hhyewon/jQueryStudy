@@ -29,3 +29,33 @@
   <script src="libs/jquery-3.6.0.min.js"></script>
 </HEAD>
 ```
+### 💬 html에서 js와 css분리하는 방법
+ - HTML 헤더에 링크걸기
+```HTML
+    <!-- css -->
+    <link rel="stylesheet" href="../css/gigu.css">
+    <!-- js -->
+    <script src="../js/gigu.js"></script>
+```
+
+### 💬 콜백함수
+```jQuery
+    $(document).ready(function(){  //콜백함수
+        var $gigu = $("#gigu");  //gigu 이미지를 찾아 var gigu에 넣어준다.
+        $("#btnStart").click(function(){  //이벤트 등록, 버튼 등록 시 콜백함수가 실행
+            $gigu.animate({
+                left : "470px"
+            }, 5000);
+        })
+    })
+```
+
+### 💬 난수 발생시키기
+- 0부터 19까지의 난수 발생 (실수로 발생)
+```jQuery
+  //해당 난수는 실수로 발생한다.
+  var rnd = Math.random() *20;
+  //때문에 다음과 같이 floor 함수를 이용해 넘버타입으로 리턴시킨다.
+  var rnd = Math.floor(Math.random() *20);
+```
+
