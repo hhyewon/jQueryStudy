@@ -29,3 +29,11 @@
   <script src="libs/jquery-3.6.0.min.js"></script>
 </HEAD>
 ```
+### 💬 html에서 js와 css분리하는 방법
+ - HTML 헤더에 링크걸기
+```HTML
+    <!-- css -->
+    <link rel="stylesheet" href="../css/gigu.css">
+    <!-- js -->
+    <script src="../js/gigu.js"></script>
+```
