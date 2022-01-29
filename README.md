@@ -72,7 +72,7 @@
     </script>
  ```
 
-- 그룹 이벤트 (1) (on())
+- 그룹 이벤트 (1) : **on()**
 ```
     <script>
         $(document).ready(function(){
